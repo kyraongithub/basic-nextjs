@@ -1,5 +1,7 @@
 import Head from "next/head";
+import Footer from "../components/Footer";
 import Header from "../components/header";
+import styles from "../styles/Home.module.css";
 export default function Home() {
   return (
     <div>
@@ -10,9 +12,8 @@ export default function Home() {
       </Head>
 
       <Header />
-      <main>
-        <h1>welcome, kyra!</h1>
-      </main>
+      <h1 className={styles.title}>welcome, kyra!</h1>
+      <Footer />
     </div>
   );
 }
