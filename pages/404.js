@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useRouter } from "next/router";
+import Layout from "../components/Layout";
 
 export default function Custom404() {
   const router = useRouter();
@@ -9,9 +10,11 @@ export default function Custom404() {
     }, 2000);
   }, []);
   return (
-    <div className="title-not-found">
-      <h1>Ooops........</h1>
-      <h1>Halaman yang anda cari tidak ditemukan</h1>
-    </div>
+    <Layout pageTitle="404">
+      <div className="title-not-found">
+        <h1>Ooops........</h1>
+        <h1>Halaman yang anda cari tidak ditemukan</h1>
+      </div>
+    </Layout>
   );
 }
