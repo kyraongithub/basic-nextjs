@@ -1,17 +1,23 @@
 import Layout from "../../components/Layout";
 import PropTypes from "prop-types";
+import { useRouter } from "next/router";
+import styles from "../../styles/Users.module.css";
 
 export default function Users(props) {
+  const router = useRouter();
   const { dataUser } = props;
-  console.log(dataUser);
   return (
-    <Layout pageTitle="User">
+    <Layout pageTitle="Users">
       {dataUser.map((user) => {
         return (
-          <>
+          <div
+            className={styles.card}
+            key={user.id}
+            onClick={() => router.push(`users/${user.id}`)}
+          >
             <p>{user.name}</p>
             <p>{user.email}</p>
-          </>
+          </div>
         );
       })}
     </Layout>
