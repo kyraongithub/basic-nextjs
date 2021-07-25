@@ -32,5 +32,10 @@ export default function Layout(props) {
 
 Layout.propTypes = {
   children: PropTypes.node,
-  titlePage: PropTypes.string,
+  pageTitle: PropTypes.string,
+};
+
+Layout.defaultProps = {
+  children: undefined,
+  pageTitle: "Next",
 };
