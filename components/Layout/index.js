@@ -11,7 +11,6 @@ import PropTypes from "prop-types";
 
 export default function Layout(props) {
   const { children, pageTitle } = props;
-  console.log(props);
   return (
     <>
       {/* Head */}
