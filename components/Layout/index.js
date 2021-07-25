@@ -3,6 +3,7 @@ import Header from "../header";
 import Footer from "../Footer";
 import styles from "./Layout.module.css";
 import PropTypes from "prop-types";
+
 // for typescript:
 // import { ReactNode } from "react";
 // interface LayoutProps {

@@ -14,6 +14,8 @@ export default function Detail(props) {
   );
 }
 
+// these two function bellow good for static data that does not have many changes
+
 export async function getStaticPaths() {
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
   const dataUser = await res.json();
@@ -26,7 +28,7 @@ export async function getStaticPaths() {
   });
   return {
     paths,
-    fallback: true,
+    fallback: false,
   };
 }
 

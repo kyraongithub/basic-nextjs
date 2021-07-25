@@ -23,6 +23,7 @@ export default function Users(props) {
     </Layout>
   );
 }
+// these function bellow good for static data that does not have many changes
 
 export async function getStaticProps() {
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
