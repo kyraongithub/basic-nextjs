@@ -1,7 +1,9 @@
+import Layout from "../../components/Layout";
+
 export default function detail() {
   return (
-    <div>
+    <Layout>
       <h1>detail</h1>
-    </div>
+    </Layout>
   );
 }

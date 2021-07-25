@@ -1,7 +1,9 @@
+import Layout from "../../components/Layout";
+
 export default function users() {
   return (
-    <div>
+    <Layout>
       <h1>users</h1>
-    </div>
+    </Layout>
   );
 }
